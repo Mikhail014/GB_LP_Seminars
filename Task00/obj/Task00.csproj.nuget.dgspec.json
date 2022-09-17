@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj": {}
+    "c:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj": {}
   },
   "projects": {
-    "C:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj": {
+    "c:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj",
+        "projectUniqueName": "c:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj",
         "projectName": "Task00",
-        "projectPath": "C:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj",
+        "projectPath": "c:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\Task00.csproj",
         "packagesPath": "C:\\Users\\semia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\obj\\",
+        "outputPath": "c:\\Users\\semia\\OneDrive\\Рабочий стол\\GB\\Знакомство с языками программированиыя\\Seminars\\Task00\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\semia\\AppData\\Roaming\\NuGet\\NuGet.Config"
