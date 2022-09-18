@@ -13,6 +13,6 @@ int num3 = Convert.ToInt32(Console.ReadLine());
 int max = num1;
 
 if (num2 > max) max = num2;
-else if (num3 > max) max = num3;
+if (num3 > max) max = num3;
 
 Console.WriteLine(max);
