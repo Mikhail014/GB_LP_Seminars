@@ -6,11 +6,11 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-bool CheckQuad(int num1, int num2)
+string CheckQuad(int num1, int num2)
 {
-    return num1 * num1 == num2;
+    if (num1 > num2 && num2 * num2 == num1) return $"Число {num1} является квадратом числа {num2}";
+    else if (num1 < num2 && num1 * num1 == num2) return $"Число {num2} является квадратом числа {num1}";
+    return $"Число {num1} не является квадратом числа {num2}";
 }
 
-string result = CheckQuad(num1, num2) ? $"Число {num2} является квадратом числа {num1}" : $"Число {num2} не является квадратом числа {num1}";
-
-Console.WriteLine(result);
+Console.WriteLine(CheckQuad(num1, num2));
