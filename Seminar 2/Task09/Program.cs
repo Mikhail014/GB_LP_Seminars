@@ -19,7 +19,18 @@ int MaxDigit(int num)
     int Digit1 = num / 10;
     int Digit2 = num % 10;
 
+    if (Digit1 == Digit2) return -1;
+
     return Digit1 > Digit2 ? Digit1 : Digit2;
 }
 
-Console.WriteLine(MaxDigit(randNum));
+bool IsEqualDigits(int num1, int num2)
+{
+    return num1 == num2;
+}
+
+int md = MaxDigit(randNum);
+
+string result = md != -1 ? md.ToString() : "Цифры одинаковые"; 
+
+Console.WriteLine(result);
