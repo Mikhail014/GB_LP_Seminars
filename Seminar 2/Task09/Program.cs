@@ -12,4 +12,4 @@ else if (Digit1 == Digit2) Console.WriteLine("Цифры одинаковые");
 else Console.WriteLine($"Наибольшая цифра числа: {Digit2}");
 
 
-int max = Digit1 > Digit2 ? Digit1 : Digit2;
+// int max = Digit1 > Digit2 ? Digit1 : Digit2; // тернарное выражение
