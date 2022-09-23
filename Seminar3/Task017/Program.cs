@@ -18,7 +18,4 @@ int GetNumberQuarter(int x, int y)
 int coords = GetNumberQuarter(coordX, coordY);
 
 if (coords == 0) Console.WriteLine("X и Y не должны быть равны нулю!");
-else if (coords == 1) Console.WriteLine("Первая четверть!");
-else if (coords == 2) Console.WriteLine("Вторая четверть!");
-else if (coords == 3) Console.WriteLine("Третья четверть!");
-else if (coords == 4) Console.WriteLine("Четвертая четверть!");
+else Console.WriteLine($"Четверть {coords}");
