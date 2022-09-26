@@ -3,9 +3,10 @@
 int[] GetArrayBin()
 {
     int[] binNums = new int[8];
+    Random r = new Random();
     for (int i = 0; i < binNums.Length; i++)
     {
-        binNums[i] = new Random().Next(0, 2);
+        binNums[i] = r.Next(0, 2);
     }
     return binNums;
 }
