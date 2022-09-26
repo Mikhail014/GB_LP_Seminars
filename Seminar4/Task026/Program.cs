@@ -15,4 +15,4 @@ int NumberOfDigits(int n)
     return count;
 }
 
-System.Console.WriteLine(NumberOfDigits(num));
+System.Console.WriteLine($"Количество цифр в числе {num}: {NumberOfDigits(num)}");
