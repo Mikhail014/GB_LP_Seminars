@@ -14,7 +14,7 @@ int NumberToPower(int n1, int n2)
 {
     if (num2 <= 0) return -1;
     int res = 1;
-    for (int i = 1; i <= n2; i++) res *= n1;
+    for (int i = 0; i < n2; i++) res *= n1;
     return res;
 }
 
