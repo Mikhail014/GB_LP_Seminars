@@ -25,11 +25,16 @@ int[] CreateArrayRandomNums(int size, int min, int max)
 
 bool IsElementInArray(int n, int[] arr)
 {
+    bool result = false;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] == n) return true;
+        if (arr[i] == n) 
+        {
+            result = true;
+            break;
+        }
     }
-    return false;
+    return result;
 }
 
 void PrintArray(int[] arr)
