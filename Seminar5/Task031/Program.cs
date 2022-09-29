@@ -1,7 +1,13 @@
 ﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-// Console.Write("Количество элементов в массиве: ");
-// int length = Convert.ToInt32(Console.ReadLine());
+Console.Write("Количество элементов в массиве: ");
+int size = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Минимальное число: ");
+int min = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Максимальное число: ");
+int max = Convert.ToInt32(Console.ReadLine());
 
 int[] CreateArrayRandomNums(int size, int min, int max)
 {
@@ -25,7 +31,7 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-int[] arr = CreateArrayRandomNums(12, -9, 9);
+int[] arr = CreateArrayRandomNums(size, min, max);
 PrintArray(arr);
 
 
