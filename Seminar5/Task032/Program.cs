@@ -20,4 +20,5 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-PrintArray($"Инверсия массива: {arrayNums}");
+System.Console.WriteLine("Инверсия массива:");
+PrintArray(arrayNums);
