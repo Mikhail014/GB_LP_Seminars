@@ -4,7 +4,7 @@
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-Console.Write("Количество чисел: ");
+Console.Write("Введите количество чисел: ");
 int count = Convert.ToInt32(Console.ReadLine());
 
 int GetAmountPositiveNums(int count)
