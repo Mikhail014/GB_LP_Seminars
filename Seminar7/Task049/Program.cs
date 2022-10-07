@@ -14,7 +14,7 @@ int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Максимальное число: ");
 int max = Convert.ToInt32(Console.ReadLine());
 
-int[,] ReplaceEvenIndexMatrix(int rows, int columns, int min, int max)
+int[,] CreateMatrixRandInt(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];
     Random r = new Random();
@@ -22,9 +22,19 @@ int[,] ReplaceEvenIndexMatrix(int rows, int columns, int min, int max)
     {
         for (int j = 0; j < columns; j++)
         {
-            int num = r.Next(min, max + 1);
-            if (i % 2 == 0 && j % 2 == 0) matrix[i, j] = num * num;
-            else matrix[i, j] = num;
+            matrix[i, j] = r.Next(min, max + 1);
+        }
+    }
+    return matrix;
+}
+
+int[,] ReplaceEvenIndexMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (i % 2 == 0 && j % 2 == 0) matrix[i, j] *= matrix[i, j];
         }
     }
     return matrix;
@@ -44,5 +54,10 @@ void PrintMatrixInt(int[,] matrix)
     }
 }
 
-int[,] matrix = ReplaceEvenIndexMatrix(rows, columns, min, max);
+int[,] matrix = CreateMatrixRandInt(rows, columns, min, max);
+System.Console.WriteLine("Оригинальная матрица:");
+PrintMatrixInt(matrix);
+
+System.Console.WriteLine("Измененная матрица:");
+int[,] changedMatrix = ReplaceEvenIndexMatrix(matrix);
 PrintMatrixInt(matrix);
