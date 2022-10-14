@@ -1,4 +1,9 @@
-﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+﻿// Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. 
+// Даны два неотрицательных числа m и n.
+// m = 2, n = 3 -> A(m,n) = 9
+// m = 3, n = 2 -> A(m,n) = 29
+
+Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 Console.Write("Введите число 1: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
