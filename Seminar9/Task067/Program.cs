@@ -5,15 +5,10 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 int GetSumOfNums(int n)
 {
-    int sum = default;
-    while(n != 0)
-    {
-        sum += n % 10;
-        n /= 10;
-    }
-    return sum;
+    if (n == 0) return 0;
+    return GetSumOfNums(n / 10) + n % 10;
 }
 
 int res = GetSumOfNums(num);
 
-System.Console.WriteLine(res);
+System.Console.WriteLine($"Сумма цифр числа {num}: {res}");
